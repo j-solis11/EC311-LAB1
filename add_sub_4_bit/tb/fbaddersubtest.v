@@ -28,7 +28,7 @@ module fbaddersubtest(
     wire [3:0]S_out;
     wire V,C4;
     
-    add_sub_4_bit ba0(.M(M), .A_in(A_in), .B_in(B_in),.S_out(S_out),.V(V),.C4(C4));
+    add_sub_4_bit ba0(.M_i(M), .A_i(A_in), .B_i(B_in),.S_o(S_out),.V_o(V),.C_o(C4));
     
     initial begin
         A_in = 0; B_in = 0; M = 0;
